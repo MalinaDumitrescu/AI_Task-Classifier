@@ -1,16 +1,78 @@
-Component diagramm for MVP (planned):
+# 🚀 MVP System Overview
 
-<img width="1748" height="562" alt="component_diagramm" src="https://github.com/user-attachments/assets/16a370d5-08c1-4a87-83e2-fdd4fde252a9" />
+A high-level overview of the MVP architecture, database design, and main workflows.
+
+---
+
+## 🧩 Component Architecture
+
+The following diagram illustrates the **planned system architecture**, including the frontend, backend, AI components, and database layer.
+
+<p align="center">
+  <img width="90%" alt="Component Diagram" src="https://github.com/user-attachments/assets/16a370d5-08c1-4a87-83e2-fdd4fde252a9" />
+</p>
+
+> 💡 **Key Insight:**  
+> The architecture is modular — separating the AI enrichment logic from core CRUD operations, while maintaining clear communication channels between the frontend, backend, and databases.
+
+---
+
+## 🗄️ Database Schema (Planned)
+
+The database schema defines the relational structure for **users (PMs)**, **projects**, and **tasks**, supporting AI-enriched fields and RAG integration.
+
+<p align="center">
+  <img width="70%" alt="Database Schema Diagram" src="https://github.com/user-attachments/assets/73cf0814-936c-4268-8cc3-57d06afccc58" />
+</p>
+
+> 🧠 **Tech Stack:**  
+> - **Supabase** — Relational DB for structured data  
+> - **ChromaDB** — Vector store for embeddings and RAG context  
+
+---
+
+## ⚙️ Core Workflows
+
+### 🧾 Project Creation Flow
+
+This diagram shows how a **Project Manager (PM)** creates a new project via the frontend, which is then processed and stored by the backend.
+
+<p align="center">
+  <img width="75%" alt="Project Creation Workflow" src="https://github.com/user-attachments/assets/a3e3e1f2-8c61-4825-ab8b-9d2aa186b21f" />
+</p>
+
+---
+
+### 🪄 Task Creation Flow
+
+> ⚠️ **Important:**  
+> A project **must exist** before creating tasks under it.
+
+Once a task is created, it’s asynchronously enriched by the AI model (e.g., story points, details), then stored in the database.
+
+<p align="center">
+  <img width="85%" alt="Task Creation Workflow" src="https://github.com/user-attachments/assets/6359e25d-b60a-4fe8-9733-6c3ed9cbeb8f" />
+</p>
+
+---
+
+## 🧱 System Summary
+
+| Layer | Description | Tech |
+|-------|--------------|------|
+| **Frontend** | Handles user interactions (login, project/task creation) | React + Tailwind CSS |
+| **Backend** | API layer managing async operations, AI calls, and DB sync | FastAPI |
+| **AI Components** | Task enrichment and story point estimation | Custom model + RAG |
+| **Databases** | Relational + Vector storage | Supabase & ChromaDB |
+
+---
+
+## 🧩 Design Highlights
+
+- 🔐 **Authentication:** Managed via Supabase Auth  
+- ⚡ **Async Operations:** Background AI enrichment handled via async tasks  
+- 🧠 **AI Integration:** Context retrieval + enrichment using RAG pipeline  
+- 🗃️ **Storage Split:** Relational data in Supabase, embeddings in ChromaDB  
+- 🧰 **Scalability:** Modular and easily extendable architecture
 
 
-
-Example workflow for the creating a project:
-
-<img width="681" height="302" alt="Project_Creation drawio" src="https://github.com/user-attachments/assets/a3e3e1f2-8c61-4825-ab8b-9d2aa186b21f" />
-
-
-Example workflow for creating a task:
-
-**It is mandatory to create a project, before creating a task in that project!**
-
-<img width="792" height="302" alt="Task_Creation drawio (1)" src="https://github.com/user-attachments/assets/6359e25d-b60a-4fe8-9733-6c3ed9cbeb8f" />
