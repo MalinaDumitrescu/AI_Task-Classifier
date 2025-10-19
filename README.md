@@ -4,6 +4,26 @@ A high-level overview of the MVP architecture, database design, and main workflo
 
 ---
 
+## 🧩 User Story – AI Task Classifier
+
+**As a** Project Manager,  
+**I want** to create, update, and manage my projects and tasks in a smart platform that automatically enriches task information using AI,  
+**so that** I can focus more on planning and coordination instead of writing long descriptions or manual estimations.
+
+<p align="center">
+<img width="2384" height="1284" alt="AI_Task_Classifier_UseCaseDiagram" src="https://github.com/user-attachments/assets/878a4e55-6cd3-4f89-b8a2-52f06c282533" />
+</p>
+
+### 💡 Acceptance Criteria
+
+- I can register, log in, and access my list of projects and tasks.  
+- I can create, edit, delete, or update the status of any project or task.  
+- When I add or modify a task, the system automatically enhances it — using AI — with a clear description and estimated story points.  
+- The platform keeps all project information organized and easy to review.  
+- I can optionally generate a concise AI-based project summary to get an overview of progress.
+
+---
+
 ## 🧩 Component Architecture
 
 The following diagram illustrates the **planned system architecture**, including the frontend, backend, AI components, and database layer.
