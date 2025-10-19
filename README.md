@@ -11,7 +11,7 @@ A high-level overview of the MVP architecture, database design, and main workflo
 **so that** I can focus more on planning and coordination instead of writing long descriptions or manual estimations.
 
 <p align="center">
-<img width="2384" height="1284" alt="AI_Task_Classifier_UseCaseDiagram" src="https://github.com/user-attachments/assets/878a4e55-6cd3-4f89-b8a2-52f06c282533" />
+<img width="2384" height="1025" alt="AI_Task_Classifier_UseCaseDiagram_FINAL" src="https://github.com/user-attachments/assets/3c04e00a-d23e-4708-aa31-67a8fb759067" />
 </p>
 
 ### 💡 Acceptance Criteria
