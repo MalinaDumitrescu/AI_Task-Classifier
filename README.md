@@ -95,4 +95,16 @@ Once a task is created, it’s asynchronously enriched by the AI model (e.g., st
 - 🗃️ **Storage Split:** Relational data in Supabase, embeddings in ChromaDB  
 - 🧰 **Scalability:** Modular and easily extendable architecture
 
+---
 
+## 🪅 Mockup
+
+<p align="center">
+  <img width="90%"" alt="mockup1" src="https://github.com/user-attachments/assets/de75a1f3-bfb6-4bcb-b635-6235f707681e" />
+</p>
+
+---
+
+<p align="center">
+  <img width="90%"" alt="MockUp2" src="https://github.com/user-attachments/assets/ad433910-2402-46e1-8599-d852db35fbb2" />
+</p>
